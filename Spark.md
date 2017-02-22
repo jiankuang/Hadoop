@@ -1,2 +1,2 @@
 # Spark Unified Stack
-![Spark Stack](spark-stack.png)
+![Spark Stack](spark-stack.PNG)
