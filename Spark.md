@@ -36,3 +36,23 @@
 * SparkConf Object
 * Environment variables: `conf/spark-env.sh`
 * Logging: `log4j.properties`
+
+## Three Ways of Setting Spark Properties
+* Set application properties via the SparkConf Object  
+
+  ```
+  var conf = new SparkConf()
+      .setMaster("local")
+      .setAppName("CountingSheep")
+      .set("spark.executor.memory", "1g")
+  var sc = new SparkContext(conf)
+  ```
+* Dynamically setting Spark properties
+  - Create s SparkContext with an empty conf  
+    `var sc = new SparkContext(new SparkConf())`
+  - Supply the configuration values during runtime  
+    ```
+    ./bin/spark-submit --name "My app" --master local[4] --conf spark.shuffle.spill=false 
+      --conf "spark.executor.extraJavaOptions=-XX:+PrintGCDetails -XX:+PrintGCTimeStamps" myApp.jar
+    ```
+* Application Web UI: `http://<driver>:4040`
