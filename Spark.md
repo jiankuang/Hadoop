@@ -22,3 +22,17 @@
 ### Initializing Spark - Scala
 ### Initializing Spark - Python
 ### Initializing Spark - Java
+
+# Spark Configuration
+## Main Components of Spark Cluster
+* Driver
+* Cluster Manger
+  - Standalone
+  - Apache Mesos
+  - Hadoop YARN
+* Worker Nodes
+
+## Main Locations for Spark Configuration
+* SparkConf Object
+* Environment variables: `conf/spark-env.sh`
+* Logging: `log4j.properties`
