@@ -50,3 +50,6 @@ cat, chgrp, chmod, chown, cp, du, ls, mkdir, mv, rm, stat, tail
   - Replaces existing rows in the table
   - Does not generate an upsert: missing rows are not inserted, not detected as an error. 
 * Call mode: makes a stored procedure call for each record
+
+### Flume
+#### Configuration of Flume
