@@ -11,7 +11,3 @@ Flume agent configuration is specified using a text file, similar to the Java.pr
   - Database Storage
   - In Memory
 * Source
-
-# Data Click for BigInsights
-* First **Data Click Authors** create and configure offload activites
-* Afterward **Data Click Users** can run these offload activities
