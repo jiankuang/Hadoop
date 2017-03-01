@@ -30,3 +30,7 @@ cat, chgrp, chmod, chown, cp, du, ls, mkdir, mv, rm, stat, tail
 * Data in motion
 * Data from a web server
 * Data from a data warehouse
+
+### Data Click for BigInsights
+* First **Data Click Authors** create and configure offload activites
+* Afterward **Data Click Users** can run these offload activities
