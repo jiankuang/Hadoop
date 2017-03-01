@@ -53,3 +53,7 @@ cat, chgrp, chmod, chown, cp, du, ls, mkdir, mv, rm, stat, tail
 
 ### Flume
 #### Configuration of Flume
+
+### Data Click for BigInsights
+* First **Data Click Authors** create and configure offload activites
+* Afterward **Data Click Users** can run these offload activities
