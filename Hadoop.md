@@ -39,6 +39,18 @@ cat, chgrp, chmod, chown, cp, du, ls, mkdir, mv, rm, stat, tail
 * Uses MapReduce to import and export the data
   - Import process creates a Java class
   - The source code of the class is provided to you
+  - You can configure the number of Mappers used. 
+  
+#### A Sqoop JDBC connection string must include
+* the name of the database 
+* the hostname of the database server
+* the port that the database server is listening on
+* the name of the JDBC driver to use 
+
+#### When importing data via Sqoop, the imported data can include
+* a collection of data from multiple tables via a join operation, as specified by a SQL query
+* specific rows and columns from a specific table
+* all of the data from a specific table
  
 #### Sqoop Exports
 * Exports a set of files from HDFS to a relation database system
@@ -53,6 +65,11 @@ cat, chgrp, chmod, chown, cp, du, ls, mkdir, mv, rm, stat, tail
 
 ### Flume
 #### Configuration of Flume
+When you create the configuration file for a Flume agent, you must configure
+* Interceptor
+* Sink
+* Channel
+* Source
 
 ### Data Click for BigInsights
 * First **Data Click Authors** create and configure offload activites
