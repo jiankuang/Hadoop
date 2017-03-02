@@ -1,6 +1,6 @@
+# Hive
 Hive is a data warehouse system built on top of Hadoop. 
 
-# Hive
 ## Hive Metastore
 * Remote: for production setting. 
 * Local
