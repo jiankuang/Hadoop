@@ -2,6 +2,18 @@
 ![Spark Stack](spark-stack.PNG)
 
 # RDD (Resilient Distributed Datasets)
+## Partitioners For Key/Value RDDs
+* Adding a key to an RDD does not change the partitioning
+* Pairs with same key may not be in same partition (**co-located**)
+* Co-location beneficial for many operations
+* We can partition records by their keys
+* partitionBy causes a shuffle
+
+### Partitioner Types
+* RangePartitioner
+* HashPartitioner
+  - Ensures all pairs with the same key are co-located
+  - Partition = Key % numPartitions
 
 # Spark Application Programming 
 ## Spark Context 
