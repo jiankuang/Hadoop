@@ -52,6 +52,21 @@
 * Lookup: return all values for specified key 
 * mapValues: tells Spark that the hashed keys will remain in their partitions and we can keep the same partitioner across operations. 
 
+## Caching and Serialization
+### Storage Levels
+* MEMORY_ONLY: default, `cache() == persist(StorageLvel.MEMORY_ONLY)`
+* MEMORY_AND_DISK
+* MEMORY_ONLY_SER
+* MEMORY_AND_DISK_SER
+* DISK_ONLY
+* MEMORY_ONLY_2: Same as the levels above, but replicate on two cluster nodes. 
+* MEMORY_AND_DISK_2
+
+### Serialization
+* Serialization has the added benefit of helping with garbage collection, as you’ll be storing 1 object versus many small objects for each record.
+* The records of an RDD will be stored as one large byte array.
+* Serialization helps by saving space that persisting RDDs occupy in memory.
+
 # Spark Application Programming 
 ## Spark Context 
 ## Linking with Spark
