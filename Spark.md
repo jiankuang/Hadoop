@@ -62,6 +62,10 @@
 * MEMORY_ONLY_2: Same as the levels above, but replicate on two cluster nodes. 
 * MEMORY_AND_DISK_2
 
+### Persistence
+* Persisting to disk would allow us to reconstitute the RDD in the event a partition is lost, instead of recomputing all the expensive operations for the lost partitions. 
+* Ideally we want to persist **after** any pruning, filtering, or other transformations needed for downstream processing.  
+
 ### Serialization
 * Serialization has the added benefit of helping with garbage collection, as you’ll be storing 1 object versus many small objects for each record.
 * The records of an RDD will be stored as one large byte array.
