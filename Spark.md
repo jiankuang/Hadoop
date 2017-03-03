@@ -34,10 +34,10 @@
 * aggregate(zeroValue)(accumulate, combine)
   - Perform complex aggregations
   - Accumulate by partition then combine results
-* countByValue
+* countByValue  
   ```
-  val text = sc.textFile("README.md")
-  val counts = text.flatMap(_.split(" ")).map((_, 1)).reduceByKey(_ + _).collectAsMap()
+  val text = sc.textFile("README.md")  
+  val counts = text.flatMap(_.split(" ")).map((_, 1)).reduceByKey(_ + _).collectAsMap()  
   val counts = text.flatMap(_.split(" ")).countByValue()
   ```
 * reduceByKey
