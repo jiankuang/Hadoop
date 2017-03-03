@@ -8,12 +8,16 @@
 * Co-location beneficial for many operations
 * We can partition records by their keys
 * partitionBy causes a shuffle
+* `coalesce` can reduce the number of partitions without causing a shuffle. 
 
 ### Partitioner Types
 * RangePartitioner
 * HashPartitioner
   - Ensures all pairs with the same key are co-located
   - Partition = Key % numPartitions
+  
+## Stage
+Shuffle dependency defines a stage boundary. 
   
 ## Advanced RDD Operations
 * Statistical operations on numerical RDDs
@@ -50,7 +54,9 @@
   - Intuitive, but **avoid** using when possible
 * aggregateByKey: splits the calculation into two steps. Only one pair per key, per partition is shuffled. 
 * Lookup: return all values for specified key 
-* mapValues: tells Spark that the hashed keys will remain in their partitions and we can keep the same partitioner across operations. 
+* mapValues
+  - Tells Spark that the hashed keys will remain in their partitions and we can keep the same partitioner across operations. 
+  - Map the values in a pair RDD without affecting the keys or partitions. 
 
 ## Caching and Serialization
 ### Storage Levels
