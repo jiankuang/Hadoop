@@ -35,22 +35,21 @@
   - Perform complex aggregations
   - Accumulate by partition then combine results
 * countByValue
-```
-val text = sc.textFile("README.md")
-val counts = text.flatMap(_.split(" ")).map((_, 1)).reduceByKey(_ + _).collectAsMap()
-val counts = text.flatMap(_.split(" ")).countByValue()
-```
+  ```
+  val text = sc.textFile("README.md")
+  val counts = text.flatMap(_.split(" ")).map((_, 1)).reduceByKey(_ + _).collectAsMap()
+  val counts = text.flatMap(_.split(" ")).countByValue()
+  ```
 * reduceByKey
 * countByKey: is not designed to be used in production 
 * groupByKey
-  - Shuffles everything
+  - Cause a shuffle of all valaues across the network, even if they are already co-located within a partition 
   - Group all values by key from all partitions into memory
   - Potential cause of OOM (out of memory) errors
   - Intuitive, but **avoid** using when possible
+* aggregateByKey: splits the calculation into two steps. Only one pair per key, per partition is shuffled. 
 * Lookup: return all values for specified key 
-* mapValues
-  - Apply a map function to each value without changing key
-  - Spark optimizer knows partitions are still good after
+* mapValues: tells Spark that the hashed keys will remain in their partitions and we can keep the same partitioner across operations. 
 
 # Spark Application Programming 
 ## Spark Context 
