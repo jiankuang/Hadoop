@@ -14,6 +14,43 @@
 * HashPartitioner
   - Ensures all pairs with the same key are co-located
   - Partition = Key % numPartitions
+  
+## Advanced RDD Operations
+* Statistical operations on numerical RDDs
+  - histogram, mean, stdev, sum, variance, max, min
+  - stats() returns all of the statistic values
+* mapPartitions, mapPartitionsWithIndex
+  - Map by partition (many -> many) instead of single value/pair (one -> one)
+  - Useful when map use function has a high overhead cost
+    * e.g., connect to a database once per partition instead of for each record
+* foreachPartition
+  - Use for batching operations
+* Approximate calculations
+  - Get approximate results for very large data sets
+  `def countApproxDistinct(relativeSD: Double = 0.05) : Long`
+* fold(zeroValue)((acc,value) => acc)
+  - Similar to reduce, but has initial "zeroed" accumulator
+  - Functions use the accumulator and RDD element to update accumulator
+* aggregate(zeroValue)(accumulate, combine)
+  - Perform complex aggregations
+  - Accumulate by partition then combine results
+* countByValue
+```
+val text = sc.textFile("README.md")
+val counts = text.flatMap(_.split(" ")).map((_, 1)).reduceByKey(_ + _).collectAsMap()
+val counts = text.flatMap(_.split(" ")).countByValue()
+```
+* reduceByKey
+* countByKey: is not designed to be used in production 
+* groupByKey
+  - Shuffles everything
+  - Group all values by key from all partitions into memory
+  - Potential cause of OOM (out of memory) errors
+  - Intuitive, but **avoid** using when possible
+* Lookup: return all values for specified key 
+* mapValues
+  - Apply a map function to each value without changing key
+  - Spark optimizer knows partitions are still good after
 
 # Spark Application Programming 
 ## Spark Context 
