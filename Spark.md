@@ -40,6 +40,7 @@
   val counts = text.flatMap(_.split(" ")).map((_, 1)).reduceByKey(_ + _).collectAsMap()  
   val counts = text.flatMap(_.split(" ")).countByValue()
   ```
+  
 * reduceByKey
 * countByKey: is not designed to be used in production 
 * groupByKey
