@@ -61,7 +61,7 @@ There are different evaluation methods that can be used
     * Information Gain: Amount of variability decrease resulting from a node split. 
     
 ### Parameter Comparision
-![Parameter Comparision](GaussianMixtureClustering.png)
+![Parameter Comparision](decision-tree-and-random-forest-parameter-comparision.PNG)
 
 ## K-Means Clustering: Unsupervised Learning
 ## Gaussian Mixture Clustering
