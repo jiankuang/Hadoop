@@ -33,5 +33,5 @@
 ![Logistic Regression](LogisticRegression.png)
 * Decision Trees
 * Random Forests
-* K-Means Clustering
+* K-Means Clustering: Unsupervised Learning
 * Gaussian Mixture Clustering
