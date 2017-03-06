@@ -39,6 +39,7 @@ There are different evaluation methods that can be used
 * Binary Classification Tree
 * Multi-class Classification Tree
 * Regression Decision Tree
+
 ### Parameters involved in Decision Tree splitting features
 * Continuous Features
 * Categorical Features
@@ -47,6 +48,7 @@ There are different evaluation methods that can be used
   - Node depth is equal to the maxDepth training parameter.
   - No split candidate leads to information gain greater than minInfoGain. 
   - No split candidate produces child nodes which have at least minInstancesPerNode training instances. 
+  
 ### Parameters involved in creating Decision Trees
 * Specifiable Parameters (without Tuning required)
 * Tunable Parameters
