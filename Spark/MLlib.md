@@ -30,6 +30,7 @@
 * Support Vector Machines (SVM)
 ![Support Vector Machine](SupportVectorMachine.png)
 * Logistic Regression
+![Logistic Regression](LogisticRegression.png)
 * Decision Trees
 * Random Forests
 * K-Means Clustering
