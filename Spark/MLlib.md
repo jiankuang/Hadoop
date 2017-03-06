@@ -52,11 +52,24 @@ There are different evaluation methods that can be used
   
 ### Parameters involved in creating Decision Trees
 * Specifiable Parameters (without Tuning required)
-  - seed 
-    * Unique for random forest.
+  - numClasses
+    * Number of classes for classification
+    * Value depends on the dataset
+  - categoricalFeaturesInfo
+    * Which features are categorical 
+    * Number of values each feature can take
+    * Map from feature indices to number of categories
+  - seed (Unique for random forest)
     * Random seed for bootstrapping, choosing feature subsets. 
     * Set as None (default): Generates seed based on system time. 
 * Tunable Parameters
+  - maxBins
+  - impurity
+    * Measure used to choose between candidate splits
+    * Used in the information gain calculation
+    * Must match type of Decision Tree
+      - Classification: gini, entrogy
+      - Regression: variance
   - numTree: Unique for random forest. 
   - featureSubsetStrategy: Unique for random forest. Number of features used as candidates for splitting at each tree node. 
 * Stopping Parameters (Tunable)
