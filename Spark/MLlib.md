@@ -34,7 +34,7 @@ There are different evaluation methods that can be used
 ## Logistic Regression
 ![Logistic Regression](LogisticRegression.png)
 
-## Decision Trees
+## Decision Trees & Random Forests
 ### The Types of Decision Trees Spark MLlib Supports
 * Binary Classification Tree
 * Multi-class Classification Tree
@@ -56,8 +56,13 @@ There are different evaluation methods that can be used
     * Number of instances required for node to split further
     * Commonly used in RandomForest  
   ![minInstancesPerNode](minInstancesPerNode.PNG)
-      
-## Random Forests
+  - minInfoGain
+    * Node must provide at least this much information gain in order to split. 
+    * Information Gain: Amount of variability decrease resulting from a node split. 
+    
+### Parameter Comparision
+![Parameter Comparision](GaussianMixtureClustering.png)
+
 ## K-Means Clustering: Unsupervised Learning
 ## Gaussian Mixture Clustering
 ![Gaussian Mixture Clustering](GaussianMixtureClustering.png)
