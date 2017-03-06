@@ -55,7 +55,7 @@ There are different evaluation methods that can be used
   - minInstancesPerNode
     * Number of instances required for node to split further
     * Commonly used in RandomForest  
-    ![minInstancesPerNode](minInstancesPerNode.PNG)
+  ![minInstancesPerNode](minInstancesPerNode.PNG)
       
 ## Random Forests
 ## K-Means Clustering: Unsupervised Learning
