@@ -30,12 +30,15 @@ There are different evaluation methods that can be used
 * Root Mean Squared Error (RMSE)
 ## Support Vector Machines (SVM)
 ![Support Vector Machine](SupportVectorMachine.png)
+
 ## Logistic Regression
 ![Logistic Regression](LogisticRegression.png)
+
 ## Decision Trees
 * Describe parameters involved in Decision Tree splitting features:
   - Continuous Features
   - Categorical Features
+  ![Categorical Features](CategoricalFeatures.png) 
   - Stop Functions
 * Spark MLlib Supports:
   - Binary Classification Tree
