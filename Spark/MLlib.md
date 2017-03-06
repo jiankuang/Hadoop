@@ -28,7 +28,7 @@
   - Mean Square Error (MSE)
   - Root Mean Squared Error (RMSE)
 * Support Vector Machines (SVM)
-![Support Vector Machine](SupportVectorMachine.PNG)
+![Support Vector Machine](SupportVectorMachine.png)
 * Logistic Regression
 * Decision Trees
 * Random Forests
