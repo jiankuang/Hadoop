@@ -35,3 +35,4 @@
 * Random Forests
 * K-Means Clustering: Unsupervised Learning
 * Gaussian Mixture Clustering
+![Gaussian Mixture Clustering](GaussianMixtureClustering.png)
