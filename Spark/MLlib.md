@@ -51,7 +51,13 @@ There are different evaluation methods that can be used
   
 ### Parameters involved in creating Decision Trees
 * Specifiable Parameters (without Tuning required)
+  - seed 
+    * Unique for random forest.
+    * Random seed for bootstrapping, choosing feature subsets. 
+    * Set as None (default): Generates seed based on system time. 
 * Tunable Parameters
+  - numTree: Unique for random forest. 
+  - featureSubsetStrategy: Number of features used as candidates for splitting at each tree node. 
 * Stopping Parameters (Tunable)
   - maxDepth = Maximum depth of the tree
   - minInstancesPerNode
@@ -61,8 +67,8 @@ There are different evaluation methods that can be used
   - minInfoGain
     * Node must provide at least this much information gain in order to split. 
     * Information Gain: Amount of variability decrease resulting from a node split. 
-    
-### Parameter Comparision
+
+#### Parameter Comparision 
 ![Parameter Comparision](decision-tree-and-random-forest-parameter-comparision.PNG)
 
 ## K-Means Clustering: Unsupervised Learning
