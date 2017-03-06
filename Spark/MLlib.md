@@ -28,6 +28,7 @@ There are different evaluation methods that can be used
 * Mean Absolute Error (MAE)
 * Mean Square Error (MSE)
 * Root Mean Squared Error (RMSE)
+
 ## Support Vector Machines (SVM)
 ![Support Vector Machine](SupportVectorMachine.png)
 
@@ -57,7 +58,7 @@ There are different evaluation methods that can be used
     * Set as None (default): Generates seed based on system time. 
 * Tunable Parameters
   - numTree: Unique for random forest. 
-  - featureSubsetStrategy: Number of features used as candidates for splitting at each tree node. 
+  - featureSubsetStrategy: Unique for random forest. Number of features used as candidates for splitting at each tree node. 
 * Stopping Parameters (Tunable)
   - maxDepth = Maximum depth of the tree
   - minInstancesPerNode
