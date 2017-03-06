@@ -23,16 +23,26 @@
   - A MatrixBlock is a tuple with two inputs: `((blockRowIndex, BlockColIndex), Matrix)`
 
 # Algorithms 
-* Linear Regression: There are different evaluation methods that can be used
-  - Mean Absolute Error (MAE)
-  - Mean Square Error (MSE)
-  - Root Mean Squared Error (RMSE)
-* Support Vector Machines (SVM)
+## Linear Regression: 
+There are different evaluation methods that can be used
+* Mean Absolute Error (MAE)
+* Mean Square Error (MSE)
+* Root Mean Squared Error (RMSE)
+## Support Vector Machines (SVM)
 ![Support Vector Machine](SupportVectorMachine.png)
-* Logistic Regression
+## Logistic Regression
 ![Logistic Regression](LogisticRegression.png)
-* Decision Trees
-* Random Forests
-* K-Means Clustering: Unsupervised Learning
-* Gaussian Mixture Clustering
+## Decision Trees
+* Describe parameters involved in Decision Tree splitting features:
+  - Continuous Features
+  - Categorical Features
+  - Stop Functions
+* Spark MLlib Supports:
+  - Binary Classification Tree
+  - Multi-class Classification Tree
+  - Regression Decision Tree
+
+## Random Forests
+## K-Means Clustering: Unsupervised Learning
+## Gaussian Mixture Clustering
 ![Gaussian Mixture Clustering](GaussianMixtureClustering.png)
