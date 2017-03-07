@@ -25,3 +25,11 @@
 ## Structural Operators
 * reverse: return a new graph which all the edges are reversed.  
 ![Graphx Operators Reverse](graphx-operator-reverse.PNG)
+* partitionBy
+  - `def partitonBy(partitionStrategy: PartitionStrategy): Graph[VD, ED]`
+  - the PartitionStrategies provided by GraphX
+    * CanonicalRandomVertexCut
+    * EdgePartition1D
+    * EdgePartition2D
+    * RandomVertexCut
+    
