@@ -14,5 +14,5 @@
 * GraphX Operators
   - numEdges
   - numVertices
-  - inDegree, outDegree, degree
-  
+  - inDegree, outDegree, degree  
+  ![Graphx Operator Degree](graphx-operator-degree.PNG)
