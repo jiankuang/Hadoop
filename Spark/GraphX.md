@@ -21,6 +21,7 @@
 # Modifying GraphX
 ## Property Operators
 * mapVertices, mapEdges, mapTriplets
+
 ## Structural Operators
 * reverse: return a new graph which all the edges are reversed.  
 ![Graphx Operators Reverse](graphx-operator-reverse.PNG)
