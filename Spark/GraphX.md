@@ -17,3 +17,9 @@
   ![Graphx Operator Degree](graphx-operator-degree.PNG)
   - Vertices, Edges and Triplets  
   ![Graphx Operators Vertice Edge Triplet](graphx-operator-vertice-edge-triplet.PNG)
+
+# Modifying GraphX
+## Property Operators
+* mapVertices, mapEdges, mapTriplets
+## Structural Operators
+* reverse: return a new graph which all the edges are reversed. 
