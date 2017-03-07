@@ -33,3 +33,12 @@
     * EdgePartition2D
     * RandomVertexCut
 * groupEdges: We must run the “partitionBy” function before running the “groupEdges” operator.
+
+# Neighborhood Aggregation
+* aggregateMessages
+  - `tripletFields` Parameter
+    * TripletFields.All
+    * TripletFields.Dst
+    * TripletFields.Src
+    * TripletFields.EdgeOnly
+    * TripletFields.None
