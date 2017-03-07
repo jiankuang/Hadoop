@@ -32,4 +32,4 @@
     * EdgePartition1D
     * EdgePartition2D
     * RandomVertexCut
-    
+* groupEdges: We must run the “partitionBy” function before running the “groupEdges” operator.
