@@ -12,7 +12,8 @@
   - dstId: Destination ID
   - attr: Edge Attribute
 * GraphX Operators
-  - numEdges
-  - numVertices
+  - numEdges, numVertices
   - inDegree, outDegree, degree  
   ![Graphx Operator Degree](graphx-operator-degree.PNG)
+  - Vertices, Edges and Triplets
+  
