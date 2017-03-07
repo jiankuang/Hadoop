@@ -15,5 +15,5 @@
   - numEdges, numVertices
   - inDegree, outDegree, degree  
   ![Graphx Operator Degree](graphx-operator-degree.PNG)
-  - Vertices, Edges and Triplets
-  
+  - Vertices, Edges and Triplets  
+  ![Graphx Operators Vertice Edge Triplet](graphx-operator-vertice-edge-triplet.PNG)
