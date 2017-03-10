@@ -34,3 +34,8 @@ cat, chgrp, chmod, chown, cp, du, ls, mkdir, mv, rm, stat, tail
 ### Data Click for BigInsights
 * First **Data Click Authors** create and configure offload activites
 * Afterward **Data Click Users** can run these offload activities
+
+## Java API
+### I/O
+#### Codec
+`CompressionCodecFactory` provides a way of mapping a filename extension to a `CompressionCodec` using its `getCodec()` method
