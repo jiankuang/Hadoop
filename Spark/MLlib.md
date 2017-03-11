@@ -30,10 +30,10 @@ There are different evaluation methods that can be used
 * Root Mean Squared Error (RMSE)
 
 ## Support Vector Machines (SVM)
-![Support Vector Machine](SupportVectorMachine.png)
+![Support Vector Machine](mllib-SupportVectorMachine.png)
 
 ## Logistic Regression
-![Logistic Regression](LogisticRegression.png)
+![Logistic Regression](mllib-LogisticRegression.png)
 
 ## Decision Trees & Random Forests
 ### The Types of Decision Trees Spark MLlib Supports
@@ -44,7 +44,7 @@ There are different evaluation methods that can be used
 ### Parameters involved in Decision Tree splitting features
 * Continuous Features
 * Categorical Features
-  ![Categorical Features](CategoricalFeatures.png) 
+  ![Categorical Features](mllib-CategoricalFeatures.png) 
 * Stop Functions (Stopping Rule): Recursion stops if any of the following conditions are met. 
   - Node depth is equal to the maxDepth training parameter.
   - No split candidate leads to information gain greater than minInfoGain. 
@@ -77,14 +77,14 @@ There are different evaluation methods that can be used
   - minInstancesPerNode
     * Number of instances required for node to split further
     * Commonly used in RandomForest  
-  ![minInstancesPerNode](minInstancesPerNode.PNG)
+  ![minInstancesPerNode](mllib-minInstancesPerNode.PNG)
   - minInfoGain
     * Node must provide at least this much information gain in order to split. 
     * Information Gain: Amount of variability decrease resulting from a node split. 
 
 #### Parameter Comparision 
-![Parameter Comparision](decision-tree-and-random-forest-parameter-comparision.PNG)
+![Parameter Comparision](mllib-decision-tree-and-random-forest-parameter-comparision.PNG)
 
 ## K-Means Clustering: Unsupervised Learning
 ## Gaussian Mixture Clustering
-![Gaussian Mixture Clustering](GaussianMixtureClustering.png)
+![Gaussian Mixture Clustering](mllib-GaussianMixtureClustering.png)
