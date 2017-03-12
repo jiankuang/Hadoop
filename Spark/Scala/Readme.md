@@ -32,3 +32,11 @@ The purpose of this example is to calculate totalRevenuePerDay
 ![3-totalOrdersPerDay](3-totalOrdersPerDay.png)
 ## totalRevenuePerDay
 ![4-totalRevenuePerDay](4-totalRevenuePerDay.png)
+
+# Using HiveContext and SQLContext
+HiveContext is used when there are Hive tables; if not, we can use SQLContext to register temp tables. 
+
+## Load Data into RDD
+![sqlcontext-1-load-data-into-rdd](sqlcontext-1-load-data-into-rdd.png)
+## Register Temp Table
+![sqlcontext-2-register-temp-table](sqlcontext-2-register-temp-table.png)
