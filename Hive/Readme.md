@@ -1,5 +1,5 @@
 # Hive
-Hive is a data warehouse system built on top of Hadoop. 
+Hive is a data warehouse system built on top of Hadoop. EDW (enterprise data warehouse)
 
 ## Hive Metastore
 * Remote: for production setting. 
