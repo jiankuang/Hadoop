@@ -14,12 +14,18 @@
 * the port that the database server is listening on
 * the name of the JDBC driver to use 
 
-## When importing data via Sqoop, the imported data can include
+## Sqoop Import
+### When importing data via Sqoop, the imported data can include
 * a collection of data from multiple tables via a join operation, as specified by a SQL query
 * specific rows and columns from a specific table
 * all of the data from a specific table
+
+### Sqoop Import Delimiters
+* enclosed-by
+* fields-terminated-by
+* lines-terminated-by
  
-## Sqoop Exports
+## Sqoop Export
 * Exports a set of files from HDFS to a relation database system
   - Table must already exist
   - Records are parsed based upon user's specifications
